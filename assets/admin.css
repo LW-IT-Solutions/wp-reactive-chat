@@ -1,0 +1,207 @@
+/* reactive.chat for WooCommerce - settings page. */
+
+.rc-admin .rc-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.rc-admin .rc-logo {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #7c3aed;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.rc-admin .rc-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 16px;
+	margin: 12px 0 16px;
+}
+
+.rc-admin .rc-nav a {
+	text-decoration: none;
+}
+
+.rc-admin .rc-columns {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 300px;
+	gap: 20px;
+	align-items: start;
+}
+
+.rc-admin .rc-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 4px 20px 16px;
+	margin-bottom: 20px;
+	scroll-margin-top: 48px;
+	box-sizing: border-box;
+	min-width: 0;
+}
+
+.rc-admin .rc-card > h2 {
+	margin: 16px 0 8px;
+}
+
+.rc-admin .form-table th {
+	width: 200px;
+}
+
+.rc-admin .rc-status th {
+	width: 210px;
+	font-weight: 600;
+}
+
+.rc-admin .rc-status .dashicons {
+	margin-right: 4px;
+}
+
+.rc-admin .rc-state-ok .dashicons {
+	color: #008a20;
+}
+
+.rc-admin .rc-state-warning .dashicons {
+	color: #996800;
+}
+
+.rc-admin .rc-state-error .dashicons {
+	color: #d63638;
+}
+
+.rc-admin .rc-state-off .dashicons {
+	color: #8c8f94;
+}
+
+.rc-admin .rc-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.rc-admin .rc-inline-form {
+	display: inline-block;
+	margin: 0;
+}
+
+.rc-admin .rc-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	line-height: 1.6;
+	vertical-align: middle;
+}
+
+.rc-admin .rc-badge-ok {
+	background: #edfaef;
+	color: #00650f;
+}
+
+.rc-admin .rc-badge-off {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.rc-admin .rc-remove {
+	display: inline-block;
+	margin-top: 6px;
+}
+
+.rc-admin .rc-radio {
+	display: block;
+	margin: 0 0 8px;
+}
+
+.rc-admin .rc-copy {
+	display: flex;
+	gap: 6px;
+	max-width: 640px;
+}
+
+.rc-admin .rc-copy input {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.rc-admin .rc-error {
+	color: #b32d2e;
+}
+
+.rc-admin .rc-fields {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 6px 16px;
+	margin: 8px 0 12px;
+}
+
+.rc-admin .rc-never ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.rc-admin .rc-never summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.rc-admin .rc-save {
+	margin: 0 0 20px;
+}
+
+.rc-admin .rc-steps li {
+	margin-bottom: 8px;
+}
+
+.rc-admin .rc-steps li.rc-done {
+	color: #50575e;
+	text-decoration: line-through;
+}
+
+.rc-admin .rc-links {
+	margin: 0;
+}
+
+.rc-admin .form-table select {
+	max-width: 100%;
+}
+
+.rc-admin .rc-hidden {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	.rc-admin .rc-columns {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.rc-admin .rc-card {
+		padding: 4px 12px 12px;
+	}
+
+	.rc-admin .rc-status th,
+	.rc-admin .rc-status td {
+		display: block;
+		width: auto;
+	}
+
+	.rc-admin .rc-copy {
+		flex-wrap: wrap;
+	}
+
+	.rc-admin .form-table input.regular-text {
+		width: 100%;
+	}
+}
